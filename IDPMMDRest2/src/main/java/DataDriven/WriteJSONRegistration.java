@@ -40,54 +40,6 @@ public class WriteJSONRegistration
 	JSONObject fileread = new JSONObject();
 	//String CONFIRM=ExcelData.getData(path,"Register",1,11);
 	//@SuppressWarnings("unchecked")
-	
-   /* public void WriteRegistration()
-    {
-		
-		  
-		 /* obj.put("firstname", firstname); 
-		  obj.put("lastname", lastname);
-		  obj.put("PHONE", PHONE); 
-		 obj.put("EMAIL", EMAIL);
-		 obj.put("ADDRESS", ADDRESS); 
-		 obj.put("CITY", CITY);
-		 obj.put("STATE", STATE);
-		 obj.put("POSTALCODE", POSTALCODE); 
-		 obj.put("USER_NAME", USER_NAME);
-		 obj.put("PASSWORD", PASSWORD); 
-		 
-		   System.out.print(obj);   
-		    
-		   
-		   FileWriter file;
-		try {
-			file = new FileWriter("C:\\\\Users\\\\Qapitol\\\\eclipse-workspace\\\\IDPMMDRest2\\\\Registration details.json");
-			file.write(obj.toJSONString());
-			   file.close();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}*/
-		//String firstname = obj.get("firstname").toString();
-		//System.out.println(firstname);
-		
-		 
-	    /*  try {
-	         //Parsing the contents of the JSON file
-	         JSONObject fileread = (JSONObject) jsonParser.parse(new FileReader("C:/Users\\\\\\\\Qapitol\\\\\\\\eclipse-workspace\\\\\\\\IDPMMDRest2\\\\\\\\Registration details.json"));
-	         String name = fileread.get("firstname").toString();
-	         System.out.println(name);
-	     
-	      }
-	      catch (FileNotFoundException e) {
-	            e.printStackTrace();
-	      } catch (IOException e) {
-	         e.printStackTrace();
-	      } catch (ParseException e) {
-	         e.printStackTrace();
-	      }
-	
-    }*/
 		
 	public HashMap<String, String> getRegistrationData(String Filepath)
 		{
