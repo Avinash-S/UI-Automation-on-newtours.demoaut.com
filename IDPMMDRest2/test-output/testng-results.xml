@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-05-02T14:16:44Z" name="Default suite" finished-at="2020-05-02T14:18:55Z" duration-ms="131150">
+    <groups>
+    </groups>
+    <test started-at="2020-05-02T14:16:44Z" name="Default test" finished-at="2020-05-02T14:18:55Z" duration-ms="131150">
+      <class name="DataDriven.BookAFlightBase">
+        <test-method signature="FlightData()[pri:0, instance:DataDriven.BookAFlightBase@16e7dcfd]" started-at="2020-05-02T19:46:44Z" name="FlightData" finished-at="2020-05-02T19:46:44Z" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightData -->
+        <test-method signature="RegistrationData()[pri:0, instance:DataDriven.BookAFlightBase@16e7dcfd]" started-at="2020-05-02T19:46:44Z" name="RegistrationData" finished-at="2020-05-02T19:46:44Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegistrationData -->
+        <test-method signature="Registration()[pri:1, instance:DataDriven.BookAFlightBase@16e7dcfd]" started-at="2020-05-02T19:46:44Z" name="Registration" finished-at="2020-05-02T19:47:11Z" duration-ms="26350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Registration -->
+        <test-method signature="LoginValidation(java.lang.String, java.lang.String)[pri:4, instance:DataDriven.BookAFlightBase@16e7dcfd]" started-at="2020-05-02T19:47:12Z" name="LoginValidation" data-provider="testdata" finished-at="2020-05-02T19:47:29Z" duration-ms="17848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginValidation -->
+        <test-method signature="LoginValidation(java.lang.String, java.lang.String)[pri:4, instance:DataDriven.BookAFlightBase@16e7dcfd]" started-at="2020-05-02T19:47:29Z" name="LoginValidation" data-provider="testdata" finished-at="2020-05-02T19:47:49Z" duration-ms="19662" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mercury]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mercury]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid credentials expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid credentials expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at DataDriven.BookAFlightBase.LoginValidation(BookAFlightBase.java:298)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginValidation -->
+        <test-method signature="LoginSuccessful()[pri:2, instance:DataDriven.BookAFlightBase@16e7dcfd]" started-at="2020-05-02T19:47:49Z" name="LoginSuccessful" finished-at="2020-05-02T19:48:07Z" depends-on-methods="DataDriven.BookAFlightBase.Registration" duration-ms="18237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSuccessful -->
+        <test-method signature="FlightRegistration()[pri:3, instance:DataDriven.BookAFlightBase@16e7dcfd]" started-at="2020-05-02T19:48:07Z" name="FlightRegistration" finished-at="2020-05-02T19:48:55Z" depends-on-methods="DataDriven.BookAFlightBase.LoginSuccessful" duration-ms="47978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightRegistration -->
+      </class> <!-- DataDriven.BookAFlightBase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
